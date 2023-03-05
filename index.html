@@ -16,6 +16,7 @@
     <button onclick="tambah()" id="tambah" >+</button>
     <button onclick="kurang()" id="kurang" >-</button>
     <button onclick="kali()" id="kali" >x</button>
+    <button onclick="bagi()" id="bagi" >/</button>
     <input id="hasilkalkulasi" >
 </body>
 
@@ -45,6 +46,14 @@
         var hasil = parseInt(angka1) * parseInt(angka2);
         document.getElementById("hasilkalkulasi").value = hasil;
         alert("hasil perkalian adalah " + hasil)
+        }
+
+    function bagi(){
+        var angka1 = document.getElementById("input1").value;
+        var angka2 = document.getElementById("input2").value;
+        var hasil = parseInt(angka1) / parseInt(angka2);
+        document.getElementById("hasilkalkulasi").value = hasil;
+        alert("hasil pembagian adalah " + hasil)
         }
 
     
